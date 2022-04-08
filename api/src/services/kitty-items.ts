@@ -20,10 +20,9 @@ enum Kind {
 }
 
 enum Rarity {
-  Blue = 0,
-  Green,
-  Purple,
-  Gold
+  Legendary = 0,
+  Epic,
+  Common
 }
 
 const randomKind = () => {
@@ -37,10 +36,9 @@ const randomKind = () => {
 }
 
 const ITEM_RARITY_PROBABILITIES = {
-  [Rarity.Gold]: 10,
-  [Rarity.Purple]: 20,
-  [Rarity.Green]: 30,
-  [Rarity.Blue]: 40,
+  [Rarity.Legendary]: 10,
+  [Rarity.Epic]: 30,
+  [Rarity.Common]: 60
 }
 
 const randomRarity = () => {

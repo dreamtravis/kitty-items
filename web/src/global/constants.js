@@ -66,10 +66,9 @@ export const ITEM_KIND_MAP = {
 }
 
 export const ITEM_RARITY_MAP = {
-  0: "Blue",
-  1: "Green",
-  2: "Purple",
-  3: "Gold",
+  0: "Legendary",
+  1: "Epic",
+  2: "Common"
 }
 
 export const ITEM_RARITY_PROBABILITIES = {

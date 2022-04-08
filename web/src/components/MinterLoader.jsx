@@ -90,7 +90,7 @@ function MinterLoaderPlaceholderImage() {
 
 function getImageSrc(kind, is2X) {
   const kindName = ITEM_KIND_MAP[kind]
-  return `/images/kitty-items/${parameterize(kindName)}-blue-lg${
+  return `/images/kitty-items/question-gray-lg${
     is2X ? "@2x" : ""
   }.png`
 }

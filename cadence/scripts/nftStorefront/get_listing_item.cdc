@@ -42,10 +42,10 @@ pub struct ListingItem {
     }
 }
 
-pub fun dwebURL(_ file: MetadataViews.IPFSFile): String {
+pub fun nftstorageURL(_ file: MetadataViews.IPFSFile): String {
     var url = "https://"
         .concat(file.cid)
-        .concat(".ipfs.dweb.link/")
+        .concat(".ipfs.nftstorage.link/")
 
     if let path = file.path {
         return url.concat(path)
@@ -81,7 +81,7 @@ pub fun main(address: Address, listingResourceID: UInt64): ListingItem? {
                         return ListingItem(
                             name: display.name,
                             image: item.imageCID(),
-                            thumbnail: dwebURL(ipfsThumbnail),
+                            thumbnail: nftstorageURL(ipfsThumbnail),
                             description: display.description,
                             itemID: itemID,
                             resourceID: item.uuid,

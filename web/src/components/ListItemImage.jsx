@@ -10,7 +10,7 @@ const getContainerStyle = isStoreItem => ({
 })
 
 const getImageSrc = (cid, size, is2X) => {
-  return `https://${cid}.ipfs.dweb.link/${size}${is2X ? "@2x" : ""}.png`
+  return `https://${cid}.ipfs.nftstorage.link`
 }
 
 export default function ListItemImage({
