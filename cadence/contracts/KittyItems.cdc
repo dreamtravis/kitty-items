@@ -297,29 +297,29 @@ pub contract KittyItems: NonFungibleToken {
 
         self.images = {
             Kind.fishbowl: {
-                Rarity.legendary: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy",
-                Rarity.epic: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy",
-                Rarity.common: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy"
+                Rarity.legendary: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
+                Rarity.epic: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
+                Rarity.common: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy"
             },
             Kind.fishhat: {
-                Rarity.legendary: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy",
-                Rarity.epic: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy",
-                Rarity.common: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy"
+                Rarity.legendary: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
+                Rarity.epic: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
+                Rarity.common: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy"
             },
             Kind.milkshake: {
-                Rarity.legendary: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy",
-                Rarity.epic: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy",
-                Rarity.common: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy"
+                Rarity.legendary: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
+                Rarity.epic: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
+                Rarity.common: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy"
             },
             Kind.tuktuk: {
-                Rarity.legendary: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy",
-                Rarity.epic: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy",
-                Rarity.common: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy"
+                Rarity.legendary: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
+                Rarity.epic: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
+                Rarity.common: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy"
             },
             Kind.skateboard: {
-                Rarity.legendary: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy",
-                Rarity.epic: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy",
-                Rarity.common: "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy"
+                Rarity.legendary: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
+                Rarity.epic: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
+                Rarity.common: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy"
             }
         }
 
