@@ -1,4 +1,4 @@
-name: Kitty Items Integration Tests
+name: Kiddos Integration Tests
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   vm-job:
-    name: Kitty Items Integration Tests
+    name: Kiddos Integration Tests
     timeout-minutes: 10
     runs-on: ubuntu-latest
     strategy:

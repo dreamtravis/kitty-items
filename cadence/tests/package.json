@@ -1,7 +1,7 @@
 {
 	"name": "kitty-items-cadence-testing",
 	"version": "0.0.1",
-	"description": "Integration tests for Kitty Items using Flow JS Testing Framework",
+	"description": "Integration tests for Kiddos using Flow JS Testing Framework",
 	"main": "index.js",
 	"scripts": {
 		"test": "jest --runInBand"

@@ -1,6 +1,6 @@
 {
-  "name": "Kitty Items",
-  "description": "A CryptoKitties Sample App. Learn how to create an NFT marketplace on Flow.",
+  "name": "Kiddos",
+  "description": "",
   "repository": "https://github.com/onflow/kitty-items",
   "logo": "https://user-images.githubusercontent.com/2547035/113519867-d8592380-9543-11eb-9bb3-c45e51360ccf.png",
   "keywords": ["Cadence", "Flow", "NFT", "Marketplace"],
@@ -20,11 +20,11 @@
       "value": "testnet"
     },
     "MINTER_ADDRESS": {
-      "description": "The address where the Kitty Items contract for your app is deployed.",
+      "description": "The address where the Kiddos contract for your app is deployed.",
       "value": ""
     },
     "MINTER_PRIVATE_KEY": {
-      "description": "The the private key for the account where the Kitty Items contract for your app is deployed.",
+      "description": "The the private key for the account where the Kiddos contract for your app is deployed.",
       "value": ""
     },
     "MINTER_ACCOUNT_KEY_INDEX": {
@@ -91,7 +91,7 @@
       "value": "https://access-testnet.onflow.org"
     },
     "NEXT_PUBLIC_API_KITTY_ITEM_MINT": {
-      "description": "RESTful endpoint for minting Kitty Items (Non-Fungible Token).",
+      "description": "RESTful endpoint for minting Kiddos (Non-Fungible Token).",
       "value": "/v1/kitty-items/mint"
     },
     "NEXT_PUBLIC_API_MARKET_ITEMS_LIST": {
@@ -102,11 +102,11 @@
       "value": "testnet"
     },
     "NEXT_PUBLIC_API_URL": {
-      "description": "The location of the API endpoint for this instance of Kitty Items. (The Heroku URL of your app).",
+      "description": "The location of the API endpoint for this instance of Kiddos. (The Heroku URL of your app).",
       "value": ""
     },
     "NEXT_PUBLIC_APP_URL": {
-      "description": "The location of this instance of Kitty Items. (The Heroku URL of your app).",
+      "description": "The location of this instance of Kiddos. (The Heroku URL of your app).",
       "value": ""
     },
     "NEXT_PUBLIC_AVATAR_URL": {

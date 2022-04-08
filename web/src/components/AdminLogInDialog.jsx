@@ -38,12 +38,12 @@ export default function AdminLogInDialog() {
   return (
     <div>
       <Dialog
-        title="Kitty Items"
+        title="Kiddos"
         isOpen={showAdminLoginDialog}
         close={closeDialog}
       >
         <h1 className="text-3xl text-gray-darkest text-center mb-2">
-          Kitty Items Admin
+          Kiddos Admin
         </h1>
         <div className="text-center text-gray text-md mb-8">
           Enter administrator password (PSST... KittyItems)

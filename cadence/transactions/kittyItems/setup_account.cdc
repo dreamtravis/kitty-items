@@ -1,7 +1,7 @@
 import NonFungibleToken from "../../contracts/NonFungibleToken.cdc"
 import KittyItems from "../../contracts/KittyItems.cdc"
 
-// This transaction configures an account to hold Kitty Items.
+// This transaction configures an account to hold Kiddos.
 
 transaction {
     prepare(signer: AuthAccount) {

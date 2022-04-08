@@ -100,7 +100,7 @@ export const getKittyItem = async (account, itemID) => {
 };
 
 /*
- * Returns the number of Kitty Items in an account's collection.
+ * Returns the number of Kiddos in an account's collection.
  * @param {string} account - account address
  * @throws Will throw an error if execution will be halted
  * @returns {UInt64}

@@ -78,10 +78,10 @@ export default function LatestStoreItems({items}) {
       <div className="main-container flex pt-10 flex-col sm:flex-row">
         <div>
           <h1 className="text-4xl text-gray-darkest mb-1">
-            Latest Kitty Items
+            Latest Kiddos
           </h1>
           <div className="text-xl text-gray-light">
-            Check out the latest freshly-minted Kitty Items.
+            Check out the latest freshly-minted Kiddos.
           </div>
         </div>
         {storeItems.length > 2 && (

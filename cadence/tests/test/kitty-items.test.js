@@ -24,7 +24,7 @@ import {
 // We need to set timeout for a higher number, because some transactions might take up some time
 jest.setTimeout(50000);
 
-describe("Kitty Items", () => {
+describe("Kiddos", () => {
 	// Instantiate emulator and path to Cadence files
 	beforeEach(async () => {
 		const basePath = path.resolve(__dirname, "../../");
@@ -54,7 +54,7 @@ describe("Kitty Items", () => {
 		expect(supply).toBe(0);
 	});
 
-	it("should be able to mint a kitty item", async () => {
+	it("should be able to mint a kiddo item", async () => {
 		// Setup
 		await deployKittyItems();
 		const Alice = await getAccountAddress("Alice");

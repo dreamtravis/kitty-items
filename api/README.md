@@ -1,12 +1,12 @@
-# Kitty Items API
+# Kiddos API
 
-The Kitty Items API is a RESTful API built with [express](https://expressjs.com/) that sends transactions to Flow using the [Flow JS SDK](https://github.com/onflow/fcl-js/tree/master/packages/sdk).
+The Kiddos API is a RESTful API built with [express](https://expressjs.com/) that sends transactions to Flow using the [Flow JS SDK](https://github.com/onflow/fcl-js/tree/master/packages/sdk).
 
 ## Setup
 
 Run the commands below to initialize the minter account.
 
-- **POST /v1/kitty-items/setup** - Create a resource that holds Kitty Items in the `MINTER_FLOW_ADDRESS` account.
+- **POST /v1/kitty-items/setup** - Create a resource that holds Kiddos in the `MINTER_FLOW_ADDRESS` account.
 
 ```sh
 curl --request POST \
@@ -14,7 +14,7 @@ curl --request POST \
   --header 'Content-Type: application/json'
 ```
 
-- **POST /v1/market/setup** - Create a resource that allows the `MINTER_FLOW_ADDRESS` to hold listings for Kitty Items.
+- **POST /v1/market/setup** - Create a resource that allows the `MINTER_FLOW_ADDRESS` to hold listings for Kiddos.
 
 ```sh
 curl --request POST \

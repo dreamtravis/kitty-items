@@ -83,7 +83,7 @@ function MinterLoaderPlaceholderImage() {
         "gray"
       )} rounded-3xl relative flex w-full items-center justify-center`}
     >
-      <img src={imageSrc1X} srcSet={imageSrcSet} alt="Mint a Kitty Item" />
+      <img src={imageSrc1X} srcSet={imageSrcSet} alt="Mint a Kiddo Item" />
     </div>
   )
 }
@@ -111,7 +111,7 @@ function MinterLoaderImage({kind, isHidden}) {
 
   return (
     <div className={classes}>
-      <img src={imageSrc1X} srcSet={imageSrcSet} alt="Mint a Kitty Item" />
+      <img src={imageSrc1X} srcSet={imageSrcSet} alt="Mint a Kiddo Item" />
     </div>
   )
 }

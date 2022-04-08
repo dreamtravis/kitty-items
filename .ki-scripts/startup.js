@@ -283,7 +283,7 @@ pm2.connect(true, async function (err) {
       `Initializing admin account: ${process.env.ADMIN_ADDRESS} (${process.env.CHAIN_ENV})`
     );
 
-    // -------------- Initialize Kitty Items  --------------------------
+    // -------------- Initialize Kiddos  --------------------------
 
     const { stderr: err2 } = await exec(
       initializeKittyItems(process.env.CHAIN_ENV),
@@ -362,7 +362,7 @@ pm2.connect(true, async function (err) {
     // NOTE: Emulator development does not persist chain state by default.
     // If you add support for emulator persistence, you will need to remove this
     // because your emaultor state would maintain the events that were
-    // emitted by the Kitty Items contract.
+    // emitted by the Kiddos contract.
     jetpack.remove("./api/kitty-items-db-emulator.sqlite");
 
     dotenv.config({
@@ -424,7 +424,7 @@ pm2.connect(true, async function (err) {
   spinner.succeed(chalk.greenBright("API server started"));
 
   spinner.info(
-    `Kitty Items API is running at: ${chalk.yellow("http://localhost:3000")}`
+    `Kiddos API is running at: ${chalk.yellow("http://localhost:3000")}`
   );
   spinner.info(
     `View log output: ${chalk.cyanBright(
@@ -447,7 +447,7 @@ pm2.connect(true, async function (err) {
   spinner.succeed(chalk.greenBright("Storefront web app started"));
 
   spinner.info(
-    `Kitty Items Web App is running at: ${chalk.yellow(
+    `Kiddos Web App is running at: ${chalk.yellow(
       "http://localhost:3001"
     )}`
   );
@@ -460,7 +460,7 @@ pm2.connect(true, async function (err) {
   // ------------------------------------------------------------
   // --------------------- DONE -------------------------------
 
-  const rainbow = chalkAnimation.rainbow("KITTY ITEMS HAS STARTED");
+  const rainbow = chalkAnimation.rainbow("Kiddos HAS STARTED");
 
   setTimeout(() => {
     rainbow.stop();

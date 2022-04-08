@@ -24,17 +24,17 @@ export default function Header() {
             <div className="flex w-12 sm:w-auto">
               <img
                 src="/images/kitty-items-logo.svg"
-                alt="Kitty Items"
+                alt="Kiddos"
                 width="60"
                 height="60"
               />
             </div>
             <div className="ml-2 d-flex flex-column">
               <div className="text-sm font-bold sm:text-2xl lg:text-3xl sm:ml-3 text-gray-darkest">
-                Kitty Items
+                Kiddos
               </div>
               <div className="text-sm sm:ml-3 text-gray-darkest">
-                Crypto Kitties Sample App
+                by OKCo.
               </div>
             </div>
           </a>

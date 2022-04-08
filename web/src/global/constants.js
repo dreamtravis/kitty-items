@@ -16,7 +16,7 @@ export const ERROR = "ERROR"
 export const IDLE_DELAY = 1000
 
 export const BASE_HTML_TITLE =
-  "A CryptoKitties Sample App, learn how to create an NFT Marketplace"
+  "by OKCo."
 
 export const getParamsString = params => {
   if (typeof params !== "object") return ""

@@ -21,7 +21,7 @@ export const deployNFTStorefront = async () => {
  * @returns {Promise<[{*} txResult, {error} error]>}
  * */
 export const setupStorefrontOnAccount = async (account) => {
-	// Account shall be able to store Kitty Items
+	// Account shall be able to store Kiddos
 	await setupKittyItemsOnAccount(account);
 
 	const name = "nftStorefront/setup_account";

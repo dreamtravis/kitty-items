@@ -57,7 +57,7 @@ export default function HeaderMessage() {
             >
               {isInitLoading ? "Initializing..." : "Initialize"}
             </button>
-            the Service Account to mint Kitty Items.
+            the Service Account to mint Kiddos.
           </>
         ) : (
           <>
@@ -82,7 +82,7 @@ export default function HeaderMessage() {
           onClick={switchToAdminView}
           className="font-bold underline hover:opacity-80"
         >
-          Mint some Kitty Items
+          Mint some Kiddos
         </button>
       </HeaderContainer>
     )
@@ -90,7 +90,7 @@ export default function HeaderMessage() {
 
   return (
     <HeaderContainer>
-      <span className="mr-3 text-sm">💻</span>Kitty Items is a demo application
+      <span className="mr-3 text-sm">💻</span>Kiddos is a demo application
       running on the Flow test network.{" "}
       <a
         className="border-b border-white"

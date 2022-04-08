@@ -6,12 +6,12 @@
 
 👋 Welcome! This demo app is designed to help you learn to build on Flow.
 
-- Kitty Items: CryptoKitties Sample App is a **complete NFT marketplace** built with [Cadence](https://docs.onflow.org/cadence), Flow's resource-oriented smart contract programming language.
+- Kiddos: CryptoKitties Sample App is a **complete NFT marketplace** built with [Cadence](https://docs.onflow.org/cadence), Flow's resource-oriented smart contract programming language.
 - Learn how to deploy contracts, mint NFTs, and integrate user wallets with the Flow Client Library (FCL).
 
 ## 🎬 Live Demo
 
-Check out the [live demo of Kitty Items](https://kitty-items.onflow.org/),
+Check out the [live demo of Kiddos](https://kitty-items.onflow.org/),
 deployed on the Flow Testnet.
 
 If you'd like to deploy your own version, see the [deploy to Heroku](#optional-heroku-deployment) instructions near the bottom to this setup guide.
@@ -66,13 +66,13 @@ A true dapp, client-only web app. This is a complete web application built with 
 
 ### 2. Look Ma, a Web Server! | [kitty-items/api](https://github.com/onflow/kitty-items/tree/master/api)
 
-We love decentralization, but servers are still very useful, and this one's no exception. The code in this project demonstrates how to connect to Flow using [Flow JavaScript SDK](https://github.com/onflow/flow-js-sdk) from a Node JS backend. It's also chalk-full of handy patterns you'll probably want to use for more complex and feature-rich blockchain applications, like storing and querying events using a SQL database (Postgres). The API demonstrates how to send transactions to the Flow blockchain, specifically for minting [Kitty Items](https://github.com/onflow/kitty-items/blob/master/cadence/contracts/KittyItems.cdc) (non-fungible tokens).
+We love decentralization, but servers are still very useful, and this one's no exception. The code in this project demonstrates how to connect to Flow using [Flow JavaScript SDK](https://github.com/onflow/flow-js-sdk) from a Node JS backend. It's also chalk-full of handy patterns you'll probably want to use for more complex and feature-rich blockchain applications, like storing and querying events using a SQL database (Postgres). The API demonstrates how to send transactions to the Flow blockchain, specifically for minting [Kiddos](https://github.com/onflow/kitty-items/blob/master/cadence/contracts/KittyItems.cdc) (non-fungible tokens).
 
 ### 3. Cadence Code | [kitty-items/cadence](https://github.com/onflow/kitty-items/tree/master/cadence)
 
 [Cadence](https://docs.onflow.org/cadence) smart contracts, scripts & transactions for your viewing pleasure. This folder contains all of the blockchain logic for the marketplace application. Here you will find examples of [fungible token](https://github.com/onflow/flow-ft) and [non-fungible token (NFT)](https://github.com/onflow/flow-nft) smart contract implementations, as well as the scripts and transactions that interact with them. It also contains examples of how to _test_ your Cadence code.
 
-## 😺 What are Kitty Items?
+## 😺 What are Kiddos?
 
 Items are hats for your cats, but under the hood they're [non-fungible tokens (NFTs)](https://github.com/onflow/flow-nft) stored on the Flow blockchain.
 
@@ -102,14 +102,14 @@ If you're running on another non-intel based system, the issue and troubleshooti
   - Run `pm2 delete all` to stop and delete all processes
   - Delete database files in `./api`. (`kitty-items-db-*.sqlite`)
 #### Unblock ports
-- Kitty Items uses the following ports. Make sure they are not in use by another process
+- Kiddos uses the following ports. Make sure they are not in use by another process
   - `8080` : Flow emulator
   - `3569` : Flow emulator
-  - `3000` : Kitty Items API
-  - `3001` : Kitty Items web app
+  - `3000` : Kiddos API
+  - `3001` : Kiddos web app
   - `8701` : FCL dev-wallet
 #### Understanding the Marketplace
-- The Kitty Items Marketplace on testnet is universal. _Every instance of Kitty Items deployed on Testnet points to the same marketplace (`NFTStorefront`) contract_. So, you may see other listing s showing up in your Kitty items instance, but you will not see items in _your_ marketplace page that were added _before_ you deployed your instance of Kitty Items. 
+- The Kiddos Marketplace on testnet is universal. _Every instance of Kiddos deployed on Testnet points to the same marketplace (`NFTStorefront`) contract_. So, you may see other listing s showing up in your Kiddos instance, but you will not see items in _your_ marketplace page that were added _before_ you deployed your instance of Kiddos. 
 
 ---
 
