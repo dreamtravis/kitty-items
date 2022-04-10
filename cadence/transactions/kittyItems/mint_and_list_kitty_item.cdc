@@ -6,7 +6,7 @@ import NFTStorefront from "../../contracts/NFTStorefront.cdc"
 
 // This transction uses the NFTMinter resource to mint a new NFT.
 
-transaction(recipient: Address, kind: UInt8, rarity: UInt8) {
+transaction(recipient: Address, kind: UInt8, rarity: UInt8, index: UInt64) {
 
     // local variable for storing the minter reference
     let minter: &KittyItems.NFTMinter
@@ -58,6 +58,7 @@ transaction(recipient: Address, kind: UInt8, rarity: UInt8) {
             recipient: receiver,
             kind: kindValue,
             rarity: rarityValue,
+            index: index
         )
 
         let saleCut = NFTStorefront.SaleCut(

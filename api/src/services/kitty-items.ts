@@ -21,6 +21,11 @@ enum Rarity {
   Common
 }
 
+const randomIndex = () => {
+  const index = Math.floor(Math.random() * 2)
+  return index;
+}
+
 const randomKind = () => {
   const values = Object.keys(Kind)
     .map(n => Number.parseInt(n))
@@ -88,6 +93,7 @@ class KittyItemsService {
 
     const kind = randomKind()
     const rarity = randomRarity()
+    const index = randomIndex()
 
     const transaction = fs
       .readFileSync(
@@ -106,6 +112,7 @@ class KittyItemsService {
         fcl.arg(recipient, t.Address),
         fcl.arg(Number(kind), t.UInt8),
         fcl.arg(Number(rarity), t.UInt8),
+        fcl.arg(index, t.UInt64),
       ],
       authorizations: [authorization],
       payer: authorization,
@@ -119,6 +126,7 @@ class KittyItemsService {
 
     const kind = randomKind()
     const rarity = randomRarity()
+    const index = randomIndex()
 
     const transaction = fs
       .readFileSync(
@@ -140,6 +148,7 @@ class KittyItemsService {
         fcl.arg(recipient, t.Address),
         fcl.arg(Number(kind), t.UInt8),
         fcl.arg(Number(rarity), t.UInt8),
+        fcl.arg(index, t.UInt64),
       ],
       authorizations: [authorization],
       payer: authorization,

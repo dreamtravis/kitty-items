@@ -8,7 +8,7 @@ pub contract KittyItems: NonFungibleToken {
     pub event ContractInitialized()
     pub event Withdraw(id: UInt64, from: Address?)
     pub event Deposit(id: UInt64, to: Address?)
-    pub event Minted(id: UInt64, kind: UInt8, rarity: UInt8)
+    pub event Minted(id: UInt64, kind: UInt8, rarity: UInt8, index: UInt64)
 
     // Named Paths
     //
@@ -53,9 +53,9 @@ pub contract KittyItems: NonFungibleToken {
         return ""
     }
 
-    // Mapping from item (kind, rarity) -> IPFS image CID
-    //
-    access(self) var images: {Kind: {Rarity: String}}
+    access(self) var legendaryImagesArray: [String]
+    access(self) var epicImagesArray: [String]
+    access(self) var commonImagesArray: [String]
 
     // Mapping from rarity -> price
     //
@@ -79,10 +79,14 @@ pub contract KittyItems: NonFungibleToken {
         // The token rarity (e.g. Gold)
         pub let rarity: Rarity
 
-        init(id: UInt64, kind: Kind, rarity: Rarity) {
+        // The token index
+        pub let index: UInt64
+
+        init(id: UInt64, kind: Kind, rarity: Rarity, index: UInt64) {
             self.id = id
             self.kind = kind
             self.rarity = rarity
+            self.index = index
         }
 
         pub fun name(): String {
@@ -101,7 +105,19 @@ pub contract KittyItems: NonFungibleToken {
         }
 
         pub fun imageCID(): String {
-            return KittyItems.images[self.kind]![self.rarity]!
+            if( self.rarity == Rarity.legendary)
+            {
+                return KittyItems.legendaryImagesArray[self.index]
+            }
+            else if( self.rarity == Rarity.epic)
+            {
+                return KittyItems.epicImagesArray[self.index]
+            }
+            else if( self.rarity == Rarity.common)
+            {
+                return KittyItems.commonImagesArray[self.index]
+            }
+            return KittyItems.commonImagesArray[0]
         }
 
         pub fun getViews(): [Type] {
@@ -243,14 +259,16 @@ pub contract KittyItems: NonFungibleToken {
             recipient: &{NonFungibleToken.CollectionPublic}, 
             kind: Kind, 
             rarity: Rarity,
+            index: UInt64,
         ) {
             // deposit it in the recipient's account using their reference
-            recipient.deposit(token: <-create KittyItems.NFT(id: KittyItems.totalSupply, kind: kind, rarity: rarity))
+            recipient.deposit(token: <-create KittyItems.NFT(id: KittyItems.totalSupply, kind: kind, rarity: rarity, index: index))
 
             emit Minted(
                 id: KittyItems.totalSupply,
                 kind: kind.rawValue,
                 rarity: rarity.rawValue,
+                index: index,
             )
 
             KittyItems.totalSupply = KittyItems.totalSupply + (1 as UInt64)
@@ -283,13 +301,9 @@ pub contract KittyItems: NonFungibleToken {
             Rarity.common: 5.0
         }
 
-        self.images = {
-            Kind.kiddo: {
-                Rarity.legendary: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
-                Rarity.epic: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
-                Rarity.common: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy"
-            }
-        }
+        self.legendaryImagesArray = ["bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy","bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy"]
+        self.epicImagesArray = ["bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy","bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy"]
+        self.commonImagesArray = ["bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy", "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy"]
 
         // Set our named paths
         self.CollectionStoragePath = /storage/kittyItemsCollectionV10
