@@ -41,25 +41,13 @@ pub contract KittyItems: NonFungibleToken {
     }
 
     pub enum Kind: UInt8 {
-        pub case fishbowl
-        pub case fishhat
-        pub case milkshake
-        pub case tuktuk
-        pub case skateboard
+        pub case kiddo
     }
 
     pub fun kindToString(_ kind: Kind): String {
         switch kind {
-            case Kind.fishbowl:
-                return "Fishbowl"
-            case Kind.fishhat:
-                return "Fish Hat"
-            case Kind.milkshake:
-                return "Milkshake"
-            case Kind.tuktuk:
-                return "Tuk-Tuk"
-            case Kind.skateboard:
-                return "Skateboard"
+            case Kind.kiddo:
+                return "Kiddo"
         }
 
         return ""
@@ -296,27 +284,7 @@ pub contract KittyItems: NonFungibleToken {
         }
 
         self.images = {
-            Kind.fishbowl: {
-                Rarity.legendary: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
-                Rarity.epic: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
-                Rarity.common: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy"
-            },
-            Kind.fishhat: {
-                Rarity.legendary: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
-                Rarity.epic: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
-                Rarity.common: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy"
-            },
-            Kind.milkshake: {
-                Rarity.legendary: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
-                Rarity.epic: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
-                Rarity.common: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy"
-            },
-            Kind.tuktuk: {
-                Rarity.legendary: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
-                Rarity.epic: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
-                Rarity.common: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy"
-            },
-            Kind.skateboard: {
+            Kind.kiddo: {
                 Rarity.legendary: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
                 Rarity.epic: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy",
                 Rarity.common: "bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy"

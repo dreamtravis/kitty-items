@@ -12,11 +12,7 @@ const flowTokenPath = '"../../contracts/FlowToken.cdc"'
 const storefrontPath = '"../../contracts/NFTStorefront.cdc"'
 
 enum Kind {
-  Fishbowl = 0,
-  Fishhat,
-  Milkshake,
-  TukTuk,
-  Skateboard
+  Kiddo = 0
 }
 
 enum Rarity {
