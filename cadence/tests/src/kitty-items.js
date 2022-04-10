@@ -10,10 +10,9 @@ export const types = {
 };
 
 export const rarities = {
-	blue: 1,
-	green: 2,
-	purple: 3,
-	gold: 4
+	gold: 1,
+	purple: 2,
+	blue: 3
 };
 
 /*
