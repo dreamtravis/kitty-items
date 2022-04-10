@@ -10,7 +10,7 @@ const getContainerStyle = isStoreItem => ({
 })
 
 const getImageSrc = (cid, size, is2X) => {
-  return `https://${cid}.ipfs.nftstorage.link`
+  return `https://gateway.pinata.cloud/ipfs/${cid}`
 }
 
 export default function ListItemImage({

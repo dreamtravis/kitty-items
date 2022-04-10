@@ -22,7 +22,7 @@ enum Rarity {
 }
 
 const randomIndex = () => {
-  const index = Math.floor(Math.random() * 2)
+  const index = Math.floor(Math.random() * 20)
   return index;
 }
 
@@ -37,9 +37,9 @@ const randomKind = () => {
 }
 
 const ITEM_RARITY_PROBABILITIES = {
-  [Rarity.Legendary]: 10,
+  [Rarity.Legendary]: 20,
   [Rarity.Epic]: 30,
-  [Rarity.Common]: 60
+  [Rarity.Common]: 50
 }
 
 const randomRarity = () => {

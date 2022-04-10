@@ -301,9 +301,68 @@ pub contract KittyItems: NonFungibleToken {
             Rarity.common: 5.0
         }
 
-        self.legendaryImagesArray = ["bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy","bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy"]
-        self.epicImagesArray = ["bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy","bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy"]
-        self.commonImagesArray = ["bafybeihwuo24w6w54o3surwzbokisbyxbget5sykm7nmkcuzlxbajo2zzy", "bafybeig7qtbrlfrddewa4ea5wswxx4j3jkjcwfmqybd4deuqntymfyumwy"]
+        self.legendaryImagesArray = ["QmeY8inTQ8vTNu8z6Zk37GaprCMF2RYbnFNT9GWStDVsCK",
+                                        "QmPCrDvqyCg2LoAcLmYnnKFwxA369CyjeDrzeunfHRgtDY",
+                                        "QmV4PxrUk33tD5vfpZ2wKadAGK4UGNUBUqffXoXPfN3Diy",
+                                        "QmR8Dz9opHbd1hECbqKkUsuRCBwvvbXt1XJaXZviuYHvo4",
+                                        "QmWfWarjKpYGgycNAmmcVG2G2rTteofR7p1yrGASJLJpYK",
+                                        "QmZLviN4pD256x9X7zmVad8CfS5qH2BkYjvSJbd8Bby3At",
+                                        "QmWwNmJkomVgrrNnTQebTG3G8a47JNac6bD3KkpEqGEgni",
+                                        "QmRpXC4ALMMSiMNUyrmCYgd3Df2SiAav44T8ePqrJHzpjZ",
+                                        "QmQUSvaqXUa9uMDM5MLxHWH1N3vCNwTKiDQtURf4QJjgow",
+                                        "QmSC8W2JXdX9V2CLD6NTPRSpBNnwmnbxkLitwm5gS8BUZM",
+                                        "QmVDdgePc5aMFTX2F5ZDG7zSCrNG8S7AW4RVZVEAyaFMMJ",
+                                        "Qmdn5Juk2Sk7k6ebLiEBKUS2tSJeAhEKUvfcke7Nrz3S4W",
+                                        "QmNycmHCEW5AVqm45AEv4UKD4MvvKno9V5du2SetouNe1T",
+                                        "QmRcveDQFrADzdeqZKpAMWQTuDPJ4RpPXRcZaoQKNNuV3K",
+                                        "QmRPqEVWmN6qj293ZLfmqJ1jPv1k1n5RLDfPqyoP5jfMHT",
+                                        "QmVkd8bQoCcZ8o9aUzZKZJ9uWxbDjJNVJT3wHpAUcfNBre",
+                                        "QmSg3wq4puaKBcjBWrdjXst2WxikD9xQAvEGwAfmcKeQA7",
+                                        "QmaJLA9HhM5yJzRKdqYKxwwJtvpeAdnwprj9onp9mEs4Mg",
+                                        "QmWUAa97muL4oyK8E5ugrzudVgEArVTQufF4mUYc7SQBZ7",
+                                        "QmeNq4LDCwUh6nYjxW3UhuDoauBNnngcW2xgHNaP63LBdT"]
+
+        self.epicImagesArray = ["QmcoxJEmBTSjPWmtUciedHjMQie6eq33eAiRC6oSxbNJAM",
+                                        "QmTCiX3RJ6e1385ZoJFtScfEzLwKT9nTh7qFTvAsuGrqVb",
+                                        "Qmb75SFcWJi3Qd6FXofvsQFrukXvSU4jgrDyytfE9FjvnL",
+                                        "QmSwqKez7aWh2WANWjz9LNa2gndMB566GRjji8STZ9qHSV",
+                                        "QmeZUeSMSBHc6Lb9zEwGarJiAeAHaKGE6ryhnkGYCq4Zfm",
+                                        "QmYk7XxbKSvHAFMeMg4JPPnDsUmNS4yzeemaDYuhPeJKpV",
+                                        "QmVZJE2Vn7Eo7RJojnkWNfh5wJVdVq1PTtzMKV2ZFfyYET",
+                                        "Qmf1dyZguNDo5qYW3URaqmXS1BECp4Cm9DNnFNquEjmN3e",
+                                        "QmZa5rTRct8h5dsfiUQNiyoPZMGejqarPs5eY6HJ5FsiKQ",
+                                        "QmRxeQ6bKKvLoEvJHWZNndQEGmwFAfmWdQrx8oRy9eXuat",
+                                        "QmRvd9dQQg8NbrsokiYtRgPNjffNsivLGUEgahPoNXWBjX",
+                                        "QmRqrLkvNREKqzjHfuxfWjwavmp86RiJDhVLcy5cgNWRx8",
+                                        "QmVgnZEW8qHAJaVsAKJTNiWDjNKXsPd3bvjZKJWb6Gx9nX",
+                                        "QmNgEdfimq3FA4TskC5iEAEWxr6GPMZZhSjRbcwJG33LmW",
+                                        "QmdCBkbLkH6R1LwMapYAwNTZwiYxMV6AtfeTXyAjodK392",
+                                        "QmSjDyWNSDEiv9JHPiepGMHisswjZN56KT9MHD6TT1PWWF",
+                                        "QmNykhZTNpL8cWBqccGdz6omzxSEehHiCdru7oTeYQ9J7T",
+                                        "QmSTptwvKqJxw32qA7R8VG44QMw7MR9bdRjKJbJf5r3fQo",
+                                        "QmWNkP3tFZL48rAUNpzZbJ5WyrpxosedYVidTqhRLh3Aos",
+                                        "QmXLdqMuSyfDirVFQNWTZih2h5Kkq2AQRhrrdW4UrFgCYq"]
+
+        self.commonImagesArray = ["QmaSAMVNAjukHq1ieWLLmAWvwAxDrEfeb6Npj86ph9usTv",
+                                        "QmShsoKPQcKBFL16uXoJT4yq5fyfVZ6tWJiGwCHVcb9Afq",
+                                        "QmNvmZRZPc1onajGqtnMDi7X9Qs4wE9aSSD1X5kUvTtmvd",
+                                        "QmTiK8kkMrrzRTUVeLXYkDznPkRPmy8AmDxCYDc6ZUPHfA",
+                                        "QmS8JniXQni3NwmS3vXLvQ1cH2hvCBQRExaDrrJa7rybpp",
+                                        "QmeYkfPSRVY2oYDyajDB5FWR4yoocHG1bG4zfqsav9MsAT",
+                                        "QmNUnDsdJJBagFQQM9FTqR2kWi3fBNV8fDbwSQTB21NFjS",
+                                        "QmRYHbY9DoDzaneANBP9kVNELdn49683XYgpRVSGBmgABC",
+                                        "Qmao96a6EsaouFBjYBNECH7ydh4AiXFyqPBd79gVa3pgAS",
+                                        "QmS47X1muUXTW8GzosGnyA3APtWi25cFUCHWfjKv17Eh9b",
+                                        "QmexcM6aths16Fh4Dp2bzg7gBTjHV69vmP31TB8dKo1dGs",
+                                        "QmS1YcTHMrsedvaszh2CCL8UfH4QNQ6rZ6QVGxqbPoMoeH",
+                                        "QmUnMbB3gAC76cxeUNgx6Hig57ZGNXxTbxaU4JKb2RmWcD",
+                                        "QmP4u7ZVrjUXZCANWq2Q3RooCnSjpbZhAnQmRbLxEkXRxR",
+                                        "QmQ39egCZ74zMr38286DMTC2kRo7g9tozYtPoAG9j1iSMG",
+                                        "QmXtVZdRrKF3qqRu8wyXpeDk7a2uASigtf4hqLzNr3xg5m",
+                                        "QmcZzV3bzmYgsQYs2P6gUbDJuxxB3WHja33SgTVPESXA95",
+                                        "QmRNRYksCwUtZVvLYkBHDnqYxVh29Mtk99N6XMLrwkfJx2",
+                                        "QmSFQPQBrrVs6w2W2fRJw2RpdA41gKacfpXSHMNFcNdQjW",
+                                        "QmcisFkvcCT9gm61mK1CqkEWvRFiczzCZDsKdvrbGfuMts"]
 
         // Set our named paths
         self.CollectionStoragePath = /storage/kittyItemsCollectionV10

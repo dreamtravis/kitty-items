@@ -43,9 +43,8 @@ pub struct ListingItem {
 }
 
 pub fun nftstorageURL(_ file: MetadataViews.IPFSFile): String {
-    var url = "https://"
+    var url = "https://gateway.pinata.cloud/ipfs/"
         .concat(file.cid)
-        .concat(".ipfs.nftstorage.link/")
 
     if let path = file.path {
         return url.concat(path)
